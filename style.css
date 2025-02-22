@@ -304,11 +304,6 @@ body {
 
 
 
-
-
-
-
-
 #about .aboutbtn p {
     font-size: 13.5px;
     text-align: center;
@@ -329,6 +324,9 @@ body {
     margin-bottom: 50px;
 }
 
+#location .menu-h3 {
+    text-align: center;
+}
 
 #location .location-img {
 
@@ -388,85 +386,107 @@ body {
 }
 
 
+
+
+
 /* スマートフォン向けのレスポンシブ対応 */
 @media screen and (max-width: 768px) {
-
-    /* header */
-    .header {
-        height: 60vh; /* ヘッダーの高さを縮小 */
-    }
-
-    .navlist {
-        display: block;
-        text-align: center; /* メニューを縦に並べる */
-    }
-
-    .navlist li {
-        margin: 10px 0;
-        font-size: 16px; /* フォントサイズを少し大きく */
-    }
-
-    /* menu */
-    #menu .sectiontitle {
-        font-size: 48px; /* タイトルのフォントサイズを小さく */
-    }
-
-    .menu-h3 {
-        font-size: 28px; /* 見出しのフォントサイズを小さく */
-    }
-
     #menu .classmenu {
         display: block;
+        /* flexからblockに変更して縦並びにする */
         padding: 0 16px;
     }
 
     #menu dl {
-        flex-direction: column; /* メニューアイテムを縦並びに変更 */
+        flex-direction: column;
+        /* メニューアイテムを縦並びに変更 */
         text-align: center;
     }
 
-    #menu .menu-left, #menu .menu-right {
+    #menu .menu-left,
+    #menu .menu-right {
         width: 100%;
         padding: 0 20px;
     }
 
-    #food {
-        margin-bottom: 30px; /* フッターとの間隔を縮小 */
-    }
-
-    /* about */
     #about .sectiontitle {
-        font-size: 48px; /* タイトルのフォントサイズを小さく */
+        font-size: 48px;
+        /* タイトルのフォントサイズを小さく */
     }
 
     #about .about-wrapper {
-        height: auto; /* 高さを自動調整 */
+        height: auto;
+        /* 高さを自動調整 */
     }
 
     #about .about-img {
-        height: 200px; /* 画像の高さを調整 */
+        height: 200px;
+        /* 画像の高さを調整 */
     }
 
     #about .aboutbtn {
-        width: 120px; /* ボタンの幅を調整 */
-        height: 35px; /* ボタンの高さを調整 */
+        width: 120px;
+        /* ボタンの幅を調整 */
+        height: 35px;
+        /* ボタンの高さを調整 */
     }
 
-    /* location */
-    #location .sectiontitle {
-        font-size: 48px; /* タイトルのフォントサイズを小さく */
+    #location .location-all {
+        width: 100%;
+        max-width: 1000px;
+        /* 画面幅に合わせて最大幅を設定 */
+        margin: 0 auto;
+        padding: 0 16px;
+        /* レスポンシブ対応で余白を調整 */
     }
 
-    #location .location-img {
-        height: 200px; /* 画像の高さを調整 */
+    #location .location-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* 子要素を中央に配置 */
+        text-align: center;
+        width: 100%;
+        min-height: 200px;
+        /* 親要素の高さを確保 */
+        box-sizing: border-box;
+        padding: 0 16px;
+        position: relative;
+    }
+
+    #location .menu-h3 {
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    #location .location-text {
+        text-align: center;
+        /* テキストを中央寄せ */
     }
 
     #location .map {
-        filter: grayscale(0); /* グレースケールを解除 */
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 アスペクト比 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 
-    /* footer */
-    .footer {
-        font-size: 10px; /* フッターのフォントサイズを小さく */
+    #location .map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    #location .location-text p {
+        font-size: 14px;
+        line-height: 1.6;
+        /* テキストのフォントサイズを調整 */
     }
 }
