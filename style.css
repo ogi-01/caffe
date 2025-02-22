@@ -388,38 +388,40 @@ body {
 }
 
 
+/* スマートフォン向けのレスポンシブ対応 */
 @media screen and (max-width: 768px) {
+
+    /* header */
     .header {
-        height: 60vh;
+        height: 60vh; /* ヘッダーの高さを縮小 */
     }
 
     .navlist {
         display: block;
-        text-align: center;
+        text-align: center; /* メニューを縦に並べる */
     }
 
     .navlist li {
         margin: 10px 0;
+        font-size: 16px; /* フォントサイズを少し大きく */
     }
 
-    .navlist li a {
-        font-size: 16px;
-    }
-
+    /* menu */
     #menu .sectiontitle {
-        font-size: 48px;
+        font-size: 48px; /* タイトルのフォントサイズを小さく */
     }
 
     .menu-h3 {
-        font-size: 28px;
+        font-size: 28px; /* 見出しのフォントサイズを小さく */
     }
 
     #menu .classmenu {
         display: block;
+        padding: 0 16px;
     }
 
     #menu dl {
-        flex-direction: column;
+        flex-direction: column; /* メニューアイテムを縦並びに変更 */
         text-align: center;
     }
 
@@ -429,39 +431,42 @@ body {
     }
 
     #food {
-        margin-bottom: 30px;
+        margin-bottom: 30px; /* フッターとの間隔を縮小 */
     }
 
+    /* about */
     #about .sectiontitle {
-        font-size: 48px;
+        font-size: 48px; /* タイトルのフォントサイズを小さく */
     }
 
     #about .about-wrapper {
-        height: auto;
+        height: auto; /* 高さを自動調整 */
     }
 
     #about .about-img {
-        height: 200px;
+        height: 200px; /* 画像の高さを調整 */
     }
 
     #about .aboutbtn {
-        width: 120px;
-        height: 35px;
+        width: 120px; /* ボタンの幅を調整 */
+        height: 35px; /* ボタンの高さを調整 */
     }
 
+    /* location */
     #location .sectiontitle {
-        font-size: 48px;
+        font-size: 48px; /* タイトルのフォントサイズを小さく */
     }
 
     #location .location-img {
-        height: 200px;
+        height: 200px; /* 画像の高さを調整 */
     }
 
     #location .map {
-        filter: grayscale(0);
+        filter: grayscale(0); /* グレースケールを解除 */
     }
 
+    /* footer */
     .footer {
-        font-size: 10px;
+        font-size: 10px; /* フッターのフォントサイズを小さく */
     }
 }
