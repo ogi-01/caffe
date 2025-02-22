@@ -386,3 +386,82 @@ body {
     font-size: 11px;
     text-align: center;
 }
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 60vh;
+    }
+
+    .navlist {
+        display: block;
+        text-align: center;
+    }
+
+    .navlist li {
+        margin: 10px 0;
+    }
+
+    .navlist li a {
+        font-size: 16px;
+    }
+
+    #menu .sectiontitle {
+        font-size: 48px;
+    }
+
+    .menu-h3 {
+        font-size: 28px;
+    }
+
+    #menu .classmenu {
+        display: block;
+    }
+
+    #menu dl {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu .menu-left, #menu .menu-right {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #food {
+        margin-bottom: 30px;
+    }
+
+    #about .sectiontitle {
+        font-size: 48px;
+    }
+
+    #about .about-wrapper {
+        height: auto;
+    }
+
+    #about .about-img {
+        height: 200px;
+    }
+
+    #about .aboutbtn {
+        width: 120px;
+        height: 35px;
+    }
+
+    #location .sectiontitle {
+        font-size: 48px;
+    }
+
+    #location .location-img {
+        height: 200px;
+    }
+
+    #location .map {
+        filter: grayscale(0);
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
