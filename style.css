@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN' 'Meiryo', 'sans-serif';
+}
+
+
+/* header */
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/mainvisual.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+
+
+.h1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navlist {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+
+.navlist li {
+    color: white;
+    font-size: 14px;
+    padding-left: 30px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px #12121229;
+    opacity: 1;
+    font-weight: bold;
+
+}
+
+.navlist li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navlist:last-child {
+    padding-right: 40px;
+}
+
+/* menu */
+
+#menu {
+    margin-bottom: 190px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    padding: 0 16px;
+}
+
+#menu .menu-wrapper {
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+#menu .menu-img {
+    background-image: url(img/menu.jpg);
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#menu .sectiontitle {
+    font-size: 72px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.menu-h3 {
+    font-size: 40px;
+    border-bottom: 6px solid #E03131;
+    display: inline-block;
+    margin-bottom: 70px;
+    text-align: center;
+
+}
+
+#menu .classmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1000px;
+
+}
+
+#menu dl {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+
+
+}
+
+#menu .menu-left {
+    width: 50%;
+    padding: 0 45px;
+    text-align: center;
+    border-right: 1px solid #000000;
+}
+
+#menu .menu-right {
+    width: 50%;
+    padding: 0 45px;
+    text-align: center;
+}
+
+#menu dt {
+    width: 86%;
+    text-align: left;
+    border-bottom: 1px dotted #000000;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+#food {
+    margin-bottom: 50px;
+}
+
+/* about */
+
+#about {
+    margin-bottom: 190px;
+}
+
+#about .about-wrapper {
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+
+#about .about-img {
+    background-image: url(img/about.jpg);
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 40px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#about .sectiontitle {
+    font-size: 72px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#about .classabout {
+    text-align: center;
+}
+
+#about .menu-h3 {
+    text-align: center;
+}
+
+#about .menutext {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1000px;
+}
+
+#about .about-left {
+    width: 50%;
+    margin-right: 40px;
+
+}
+
+#about .about-right {
+    width: 50%;
+
+}
+
+#about .menutext p {
+    margin-bottom: 40px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    font-size: 14.5px;
+}
+
+#about .aboutbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    /* border: 2px solid red; */
+    width: 150px;
+    height: 40px;
+    position: relative;
+}
+
+#about .aboutbtn::after {
+    content: "";
+    background-color: red;
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 0.3s ease;
+
+}
+
+#about .aboutbtn:hover::after {
+    width: 100%;
+}
+
+#about .aboutbtn:hover::before {
+    height: 100%;
+}
+
+#about .aboutbtn span:hover::before {
+    height: 100%;
+}
+
+#about .aboutbtn span:hover::before {
+    height: 100%;
+}
+
+#about .aboutbtn span:hover::after {
+    width: 100%;
+}
+
+#about .aboutbtn::before {
+    content: "";
+    background-color: red;
+    width: 2px;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: height 0.3s ease;
+
+
+}
+
+
+#about .aboutbtn span::after {
+    content: "";
+    background-color: red;
+    width: 20%;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+
+#about .aboutbtn span {
+    display: block;
+
+}
+
+
+
+#about .aboutbtn span::before {
+    content: "";
+    background-color: red;
+    width: 2px;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: height 0.3s ease;
+
+}
+
+
+
+
+
+
+
+
+
+#about .aboutbtn p {
+    font-size: 13.5px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    line-height: 40px;
+}
+
+#about .aboutbtn a {
+    text-decoration: none;
+    color: black;
+}
+
+/* lacation */
+
+#location .location-wrapper {
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+
+#location .location-img {
+
+    background-image: url(img/location.jpg);
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 40px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#location .sectiontitle {
+    font-size: 72px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#location .location-all {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#location .location-about {
+    text-align: center;
+}
+
+#location .map {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    filter: grayscale(1);
+    margin-bottom: 20px;
+}
+
+#location .location-text {
+    margin-bottom: 170px;
+}
+
+#location .location-text p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* footer */
+
+.footer {
+    font-size: 11px;
+    text-align: center;
+}
